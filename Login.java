@@ -98,6 +98,11 @@ public class Login {
 		frame.getContentPane().add(btnNewButton_1_1_1);
 		
 		JButton btnNewButton_1_1_1_1 = new JButton("EXIT");
+		btnNewButton_1_1_1_1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.exit(0);
+			}
+		});
 		btnNewButton_1_1_1_1.setFont(new Font("Times New Roman", Font.PLAIN, 22));
 		btnNewButton_1_1_1_1.setBounds(472, 291, 110, 50);
 		frame.getContentPane().add(btnNewButton_1_1_1_1);
