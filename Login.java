@@ -84,8 +84,9 @@ public class Login {
 			public void actionPerformed(ActionEvent e) {
 				String username = textField.getText();
 				String password = textField.getText();
-				if(password.contains("7715006964") && username.contains("Ameya"))
+				if(password.contains("Ameya") && username.contains("Ameya1212"))
 				{
+					JOptionPane.showMessageDialog(null,"  YOU HAVE LOGGED :)","SUCCESSFUL",JOptionPane.INFORMATION_MESSAGE);
 					textField.setText(null);
 					passwordField.setText(null);
 				}
