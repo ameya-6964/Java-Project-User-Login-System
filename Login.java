@@ -13,14 +13,9 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
 public class Login {
-
 	private JFrame frame;
 	private JTextField textField;
 	private JPasswordField passwordField;
-
-	/**
-	 * Launch the application.
-	 */
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -34,16 +29,11 @@ public class Login {
 		});
 	}
 
-	/**
-	 * Create the application.
-	 */
 	public Login() {
 		initialize();
 	}
 
-	/**
-	 * Initialize the contents of the frame.
-	 */
+	
 	private void initialize() {
 		frame = new JFrame();
 		frame.setBounds(100, 100, 661, 402);
