@@ -2,6 +2,8 @@ import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+
 import java.awt.Font;
 import javax.swing.SwingConstants;
 import javax.swing.JTextField;
@@ -80,6 +82,20 @@ public class Login {
 		btnNewButton_1_1.setFont(new Font("Times New Roman", Font.PLAIN, 22));
 		btnNewButton_1_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				String username = textField.getText();
+				String password = textField.getText();
+				if(password.contains("7715006964") && username.contains("Ameya"))
+				{
+					textField.setText(null);
+					passwordField.setText(null);
+				}
+				else
+				{
+					JOptionPane.showMessageDialog(null,"  INVALID LOGIN","ERROR",JOptionPane.ERROR_MESSAGE);
+					textField.setText(null);
+					passwordField.setText(null);
+				}
+				
 			}
 		});
 		btnNewButton_1_1.setBounds(154, 291, 110, 50);
